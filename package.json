@@ -1,5 +1,5 @@
 {
-  "name": "Swarmer.io - Dashboard",
+  "name": "Swarmer.io-Dashboard",
   "version": "0.0.0-alpha",
   "description": "Front-end for swarmer.io",
   "main": "src/index.js",
@@ -9,15 +9,15 @@
   "scripts": {
     "build": "webpack --config webpack.common.js --mode production",
     "dev": "webpack-dev-server --config webpack.common.js --mode development --open --watch",
-    "test": "echo \"Error: no test specified but lets exit with success so travis builds\" && exit 0", 
-    "start": "npm run dev", 
+    "test": "echo \"Error: no test specified but lets exit with success so travis builds\" && exit 0",
+    "start": "npm run dev",
     "upgradeDeps": "ncu -u",
     "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ConnerAiken/swarmer.io-dashboard.git"
-  }, 
+  },
   "author": "Conner Aiken",
   "license": "MIT",
   "bugs": {
@@ -45,6 +45,6 @@
     "style-loader": "^0.20.3",
     "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13",
-    "webpack-dev-server": "^3.1.1"
+    "webpack-dev-server": "^3.1.3"
   }
 }
