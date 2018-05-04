@@ -71,7 +71,9 @@
 
         .button {
             float: right;
-        }
+            font-style: bold;
+            padding: 2.5% 5%;
+        } 
     }
 
     & > div:nth-child(3) { 
