@@ -10,13 +10,13 @@ export default class Home extends React.Component {
   
     render() {
       return (
-        <div id="container">
-            <div style={{backgroundImage: `url(${bg})`}}> 
+        <div id="home-container" className="container">
+            <div id="hero" style={{backgroundImage: `url(${bg})`}}> 
                 <h1>Swarmer</h1>
                 <hr/>
                 <h4>Functional Load Testing</h4>
             </div> 
-            <div>  
+            <div id="features">  
                 <div> 
                     <h4>Well, what can Swarmer do for you anyway?</h4>
                     <ul>
@@ -25,7 +25,7 @@ export default class Home extends React.Component {
                         <li>Detailed reports of user experience</li>
                         <li>Import existing or design new end to end tests</li>
                     </ul>
-                    <a href="/dash" class="button">Try It Out <i className="fas fa-arrow-circle-right"></i></a>
+                    <a href="/dashboard" class="button">Try It Out <i className="fas fa-arrow-circle-right"></i></a>
                     <p><small>* Compatible with Webdriverio and Nightwatch</small></p>
                 </div>
                 <div>
