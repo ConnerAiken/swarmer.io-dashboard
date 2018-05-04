@@ -18,7 +18,7 @@ export default class Home extends React.Component {
             </div> 
             <div>  
                 <div> 
-                    <h4>Well, what are you waiting for?</h4>
+                    <h4>Well, what can Swarmer do for you anyway?</h4>
                     <ul>
                         <li>Load test your web application from the cloud</li>
                         <li>Simulate actual user behavior</li>
