@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Medula+One|Gugi|Nixie+One');
+
 body {
     font-size: 12px; 
     color: black;
+    font-family: 'Nixie One', cursive;
 } 
 
 html, body, #app, #container {
@@ -9,6 +12,49 @@ html, body, #app, #container {
     margin: 0;
     padding: 0;
 }
+
+
+/* Typography */
+hr {
+    border: 0; 
+    height: 1px; 
+    background: #333; 
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+hr.pike {
+    overflow: visible;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 60px; 
+}
+h2 {
+    font-size: 50px;
+}
+h3 {
+    font-size: 40px;
+}
+h4 {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+h5 {
+    font-size: 20px;
+}
+
+h1, h2 {
+    font-family: 'Gugi', cursive;
+}
+
+h3, h4, h5 {
+    font-family: 'Medula One', cursive;
+}
+
 ::-webkit-scrollbar {
     width: 0px; 
     background: transparent;
