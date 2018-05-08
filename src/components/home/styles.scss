@@ -3,8 +3,8 @@
     flex-flow: column nowrap;
 
     #hero, #features {
-        height: 100%;
-        width: 100%; 
+        min-height: 100%;
+        min-width: 100%; 
     }
 
     #hero {  
@@ -68,4 +68,10 @@
             padding: 2.5% 5%;
         } 
     } 
+}
+
+
+#home-container, #features {
+    min-height: 100%;
+    min-width: 100%; 
 }
