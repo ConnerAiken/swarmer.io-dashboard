@@ -3,18 +3,34 @@ import './styles.scss';
 
 export default class Dashboard extends React.Component { 
     constructor(props) {
-      super(props);  
+      super(props);
+
+      this.state = {
+          sidebarCollapsed: false
+      };
+
+      this.collapseSidebar = this.collapseSidebar.bind(this);
     }
-  
+    
+    componentDidUpdate() {
+        console.log(this.state);
+    }
+
+    collapseSidebar() {
+        this.setState({
+            sidebarCollapsed: !this.state.sidebarCollapsed
+        });
+    }
+
     render() {
       return (
-        <div id="dashboard-container" className="container">
+        <div id="dashboard-container" className={this.state.sidebarCollapsed ? 'expanded' : 'shifted'}>
             <div id="sidebar">  
                 <ul>
-                    <li id="logo">Swarmer.io</li>
-                    <li><i class="fas fa-home"></i> Home</li>
-                    <li><i class="fas fa-play-circle"></i> Test Runners</li>
-                    <li><i class="fas fa-tachometer-alt"></i> Reports</li>
+                    <li id="logo"><span>Swarmer.io</span> <i id="collapse-icon" className="fas fa-bars" onClick={this.collapseSidebar}></i></li>
+                    <li><i className="fas fa-home"></i><span>Home</span></li>
+                    <li><i className="fas fa-play-circle"></i><span>Test Runners</span></li>
+                    <li><i className="fas fa-tachometer-alt"></i><span>Reports</span></li>
                 </ul>
             </div>  
             <div id="dashboard"> 

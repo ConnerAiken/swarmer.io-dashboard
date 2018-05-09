@@ -1,9 +1,9 @@
 #dashboard-container {
     display: grid;
-    grid-auto-columns: 15% 85%;
-    grid-auto-rows: 100%;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 100%;
     grid-template-areas: 'left right';
-    background-image: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-image: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12); 
 
     h1, h2, h3, h4, h5, p, li, ul { 
         margin: 0;
@@ -11,9 +11,39 @@
         
     } 
 
-    #dashboard,
+    &,
     #sidebar {
         min-height: 100%;  
+    }
+    
+    &.expanded { 
+        grid-template-columns: 2.5% 97.5%; 
+
+        #sidebar {  
+            
+            #collapse-icon {
+                float: initial;
+                cursor: pointer;
+            }
+
+            li { 
+                text-align: center;
+                padding: 10px;
+
+                i {
+                    font-size: 15px; 
+                }
+
+                span {
+                    font-size: 0px;
+                } 
+
+                &:hover {
+                    padding: 10px !important;
+                    letter-spacing: initial !important; 
+                }
+            }
+        }
     }
 
     #sidebar { 
@@ -33,37 +63,36 @@
             grid-template-columns: 100%;
         }
  
-        li { 
+        li {  
             font-size: 16px;
             color: white;
             font-family: 'Gugi', cursive;
-            transition: padding .25s, letter-spacing .25s;
+            transition: padding .25s, letter-spacing .25s, box-shadow .25s;
              
-            padding: 4% 4% 4% 8%; 
+            padding: 15px 15px 15px 20px; 
             display: block;
 
             border-bottom: 1px solid rgba(148, 148, 148, 0.43);
 
-            i {
-                margin-right: 2.5%;
+            #collapse-icon {
+                float: right;
+                cursor: pointer;
             }
 
-            &#logo {
-                text-align: center;
+            i {
+                margin-right: 3%;
             }
-            
+ 
             &:first-child {
                 background: #000;
                 font-size: 18px;
-                font-style: bold;
-                justify-self: center;
-                padding: 4%;
-                width: 100%;
+                font-style: bold;   
             }
 
             &:not(:first-child):hover {
-                padding: 5% 4% 5% 8%;
+                padding: 17.5px 15px 17.5px 20px;
                 letter-spacing: 1.5px;
+                box-shadow: 0px 0px 1px rgba(255, 255, 255, .75);
                 cursor: pointer;
             }
         } 
@@ -71,18 +100,18 @@
     }
 
     #dashboard { 
-        padding: 2% 2% 1% 2%;
+        padding: 25px 25px 15px 25px;
         grid-area: right; 
         color: white;
     }
 
     #dashboard-header {
-        height: 10%;
+        height: 5%;
     }
 
     #dashboard-content {
-        height: 90%; 
-        padding: 2%;
+        height: 95%; 
+        padding: 1%;
         box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.23);
         border: 1px solid rgba(0, 0, 0, 0.65);
         background: rgba(34, 34, 34, .95);
