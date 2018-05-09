@@ -50,9 +50,9 @@ export default class Dashboard extends React.Component {
             <div id="sidebar">  
                 <ul>
                     <li id="logo"><span>Swarmer.io</span> <i id="collapse-icon" className="fas fa-bars" onClick={this.collapseSidebar}></i></li>
-                    <li onClick={this.changeView.bind(this, 0)}><i className="fas fa-home"></i><span>Home</span></li>
-                    <li onClick={this.changeView.bind(this, 1)}><i className="fas fa-play-circle"></i><span>Test Runners</span></li>
-                    <li onClick={this.changeView.bind(this, 2)}><i className="fas fa-tachometer-alt"></i><span>Reports</span></li>
+                    <li className={this.state.activeView === 0 ? 'active' : null} onClick={this.changeView.bind(this, 0)}><i className="fas fa-home"></i><span>Home</span></li>
+                    <li className={this.state.activeView === 1 ? 'active' : null} onClick={this.changeView.bind(this, 1)}><i className="fas fa-play-circle"></i><span>Test Runners</span></li>
+                    <li className={this.state.activeView === 2 ? 'active' : null} onClick={this.changeView.bind(this, 2)}><i className="fas fa-tachometer-alt"></i><span>Reports</span></li>
                 </ul>
             </div>  
             <div id="dashboard"> 
