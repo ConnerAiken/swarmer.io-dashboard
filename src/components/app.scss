@@ -16,6 +16,10 @@ html, body, #app, .container {
     overflow-x: hidden;
 } 
 
+a:visited {
+    text-decoration: none;
+}
+
 * {
     box-sizing: border-box;
 }
