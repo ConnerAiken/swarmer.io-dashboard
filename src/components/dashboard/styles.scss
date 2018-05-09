@@ -47,7 +47,7 @@
             i {
                 margin-right: 2.5%;
             }
-            
+
             &#logo {
                 text-align: center;
             }
@@ -71,8 +71,20 @@
     }
 
     #dashboard { 
-        padding: 2.5%;
+        padding: 2% 2% 1% 2%;
         grid-area: right; 
         color: white;
+    }
+
+    #dashboard-header {
+        height: 10%;
+    }
+
+    #dashboard-content {
+        height: 90%; 
+        padding: 2%;
+        box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.23);
+        border: 1px solid rgba(0, 0, 0, 0.65);
+        background: rgba(34, 34, 34, .95);
     }
 }

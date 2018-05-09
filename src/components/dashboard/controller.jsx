@@ -18,8 +18,12 @@ export default class Dashboard extends React.Component {
                 </ul>
             </div>  
             <div id="dashboard"> 
-                <h2>Dashboard</h2> 
-                <hr style={{width: '100%'}}/>
+                <div id="dashboard-header">
+                    <h3>Dashboard</h3>
+                </div>
+                <div id="dashboard-content">
+                    <p>Lorem ipsum..</p>
+                </div>
             </div>  
         </div>
       );
