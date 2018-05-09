@@ -11,7 +11,7 @@ export default class Dashboard extends React.Component {
         <div id="dashboard-container" className="container">
             <div id="sidebar">  
                 <ul>
-                    <li>Swarmer.io</li>
+                    <li id="logo">Swarmer.io</li>
                     <li><i class="fas fa-home"></i> Home</li>
                     <li><i class="fas fa-play-circle"></i> Test Runners</li>
                     <li><i class="fas fa-tachometer-alt"></i> Reports</li>
