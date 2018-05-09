@@ -1,3 +1,5 @@
+@import "./../../helpers/mediaQueries.scss";
+
 #dashboard-container {
     display: grid;
     grid-template-columns: 15% 85%;
@@ -73,6 +75,24 @@
             display: block;
 
             border-bottom: 1px solid rgba(148, 148, 148, 0.43);
+
+            @include mobile-only {
+                &, &#logo {
+                    font-size: 12px;
+                }
+                i {
+                    display: none;
+                }
+            }
+
+            @include tablet-only {
+                &, &#logo {
+                    font-size: 12px;
+                }
+                i {
+                    display: none;
+                }
+            }
 
             #collapse-icon {
                 float: right;

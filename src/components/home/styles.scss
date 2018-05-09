@@ -1,3 +1,5 @@
+@import "./../../helpers/mediaQueries.scss";
+
 #home-container { 
     display: flex;
     flex-flow: column nowrap;
@@ -61,7 +63,7 @@
 
         img { 
             width: 75%;
-            margin-left: 10%;
+            margin-left: 10%; 
         }
 
         .button {

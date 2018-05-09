@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Medula+One|Gugi|Nixie+One');
 @import url('https://use.fontawesome.com/releases/v5.0.12/css/all.css');
+@import "./../helpers/mediaQueries.scss";
 
 body {
     font-size: 12px; 
@@ -96,3 +97,45 @@ h4, h5 {
     width: 0px; 
     background: transparent;
 } 
+
+@include mobile-only {
+    body {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 40px; 
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    h4 {
+        font-size: 20px; 
+    }
+    h5 {
+        font-size: 15px;
+    }
+    
+}
+@include tablet-only {
+    body {
+        font-size: 11px;
+    }
+    h1 {
+        font-size: 40px; 
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    h4 {
+        font-size: 20px; 
+    }
+    h5 {
+        font-size: 15px;
+    }
+}
