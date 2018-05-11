@@ -14,13 +14,13 @@ export default class Home extends React.Component {
             <div id="hero" style={{backgroundImage: `url(${bg})`}}> 
                 <h1>Swarmer</h1>
                 <hr/>
-                <h4>Functional Load Testing</h4>
+                <h4>Selenium Grid and PhantomJS Automated Testing</h4>
+                <p>Setup your UI tests to run in the cloud and forget about it</p>
             </div> 
             <div id="features">  
                 <div> 
                     <h4>Well, what can Swarmer do for you anyway?</h4>
-                    <ul>
-                        <li>Load test your web application from the cloud</li>
+                    <ul> 
                         <li>Simulate actual user behavior</li>
                         <li>Detailed reports of user experience</li>
                         <li>Import existing or design new end to end tests</li>
